@@ -41,12 +41,18 @@
       "password": "$2a$10$TxSAIK4M5pERx4F90acKzOFS6nwH5fcLcz95QKXCSgPF/BwLDLVTq",
       "role": "customer",
       "id": 7
+    },
+    {
+      "email": "userbaru@gmail.com",
+      "password": "$2a$10$pVJGr4c7/sxPpDSJzRLL..e/iSrohhz6S4abBVx/Haih8gyiKkxD6",
+      "role": "customer",
+      "id": 8
     }
   ],
   "products": [
     {
-      "name": "Oversized Bicolor T-Shirt",
-      "price": "249.000",
+      "name": "Oversizez T-Shirt",
+      "price": "229.000",
       "categoryId": 1,
       "image": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/475366/sub/goods_475366_sub14_3x4.jpg?width=369",
       "description": "Raglan sleeves for a sporty look. Half-sleeve design in an oversized cut for a relaxed feel. Playful bicolor design.",
@@ -135,14 +141,14 @@
       "id": 16
     },
     {
-      "name": "Skinny Straight Pants",
-      "price": "239.000",
-      "categoryId": 2,
-      "image": "https://executive.co.id/cdn/shop/files/7-MLDNSEA224L066_LT_1_5f28165c-f597-4e26-bd41-16875111a44d_1080x.jpg?v=1740554308",
-      "description": "Celana jeans denim fitting slim dengan washingan light blue, dilengkapi dengan whisker dan spray memberikan e ect worn in. ",
-      "stock": "11",
+      "name": "Barang baru",
+      "price": "180000",
+      "categoryId": "",
+      "image": "",
+      "description": "kole",
+      "stock": "22",
       "userId": 4,
-      "id": 23
+      "id": 17
     }
   ],
   "categories": [
@@ -156,7 +162,42 @@
     }
   ],
   "cart": [
-    
+    {
+      "userId": "6",
+      "productId": 8,
+      "quantity": 3,
+      "id": 1
+    },
+    {
+      "userId": "6",
+      "productId": 15,
+      "quantity": 2,
+      "id": 2
+    },
+    {
+      "userId": "6",
+      "productId": 16,
+      "quantity": 3,
+      "id": 3
+    },
+    {
+      "userId": "8",
+      "productId": 8,
+      "quantity": 6,
+      "id": 4
+    },
+    {
+      "userId": "8",
+      "productId": 9,
+      "quantity": 1,
+      "id": 5
+    },
+    {
+      "userId": "8",
+      "productId": 14,
+      "quantity": 2,
+      "id": 6
+    }
   ],
   "orders": [],
   "wishlist": []

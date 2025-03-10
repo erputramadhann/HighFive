@@ -13,103 +13,105 @@ export default function CartScreen() {
   const [updatedItems, setUpdatedItems] = useState(new Set()); // Menyimpan ID item yang diupdate
 
   useEffect(() => {
-    if (userId) {
-      axios.get(`http://localhost:3005/cart?userId=${userId}`)
-        .then(async ({ data: cartData }) => {
-          // Hilangkan duplikasi jumlah saat fetching data
-          const uniqueCartData = [];
-const productIds = new Set();
-
-cartData.forEach(item => {
-  if (!productIds.has(item.productId)) {
-    uniqueCartData.push(item);
-    productIds.add(item.productId);
-  }
-});
-
-          const updatedCart = await Promise.all(
-            uniqueCartData.map(async (item) => {
-              try {
-                const { data: product } = await axios.get(`http://localhost:3005/products/${item.productId}`);
-                return { ...item, ...product, stock: product.stock };
-              } catch (error) {
-                console.error(`Error fetching product ${item.productId}:`, error);
-                return item;
-              }
-            })
-          );
-
-          setCart(updatedCart);
-        })
-        .catch((error) => console.error('Error fetching cart:', error));
+    const savedCart = localStorage.getItem(`cart-${userId}`);
+    if (savedCart) {
+      setCart(JSON.parse(savedCart));
     }
   }, [userId]);
 
   useEffect(() => {
+    const fetchCartData = async () => {
+      if (!userId) return;
+  
+      let localCart = [];
+      const localStorageCart = localStorage.getItem(`cart-${userId}`);
+  
+      if (localStorageCart) {
+        try {
+          localCart = JSON.parse(localStorageCart);
+        } catch (error) {
+          console.error("Error parsing local cart:", error);
+        }
+      }
+  
+      try {
+        const { data: cartData } = await axios.get(`http://localhost:3005/cart?userId=${userId}`);
+  
+        const productIds = new Set(localCart.map(item => item.productId));
+        const combinedCart = [...localCart];
+  
+        // Tambahkan item baru dari API jika tidak ada di localStorage
+        for (const item of cartData) {
+          if (!productIds.has(item.productId)) {
+            try {
+              const { data: product } = await axios.get(`http://localhost:3005/products/${item.productId}`);
+              combinedCart.push({ ...item, ...product, stock: product.stock });
+            } catch (error) {
+              console.error(`Error fetching product ${item.productId}:`, error);
+              combinedCart.push(item); // Jika gagal mengambil detail produk, tetap tambahkan item
+            }
+          }
+        }
+  
+        setCart(combinedCart);
+        localStorage.setItem(`cart-${userId}`, JSON.stringify(combinedCart)); // Simpan gabungan ke localStorage
+      } catch (error) {
+        console.error('Error fetching cart:', error);
+      }
+    };
+  
+    fetchCartData();
+  }, [userId]);
+  
+
+  useEffect(() => {
     if (updatedItems.size > 0) {
-      updatedItems.forEach((id) => {
+      updatedItems.forEach(async (id) => {
         const item = cart.find(i => i.id === id);
         if (item) {
-          axios.patch(`http://localhost:3005/cart/${id}`, {
-            userId: userId,
-            quantity: item.quantity
-          })
-          .then(response => {
-            //console.log("Update berhasil:", response.data);
-          })
-          .catch(error => {
+          try {
+            await axios.patch(`http://localhost:3005/cart/${id}`, {
+              userId: userId,
+              quantity: item.quantity
+            });
+          } catch (error) {
             console.error("Error updating quantity:", error);
-          });
+          }
         }
       });
-      setUpdatedItems(new Set()); // Reset daftar item yang sudah diupdate
+
+      setUpdatedItems(new Set());
     }
   }, [cart]);
 
   const updateQuantity = (id, change) => {
-    setCart(prevCart => 
-      prevCart.map(item =>
-        item.id === id
-          ? { ...item, quantity: Math.max(1, Math.min(item.quantity + change, item.stock)) }
-          : item
-      )
+    const updatedCart = cart.map(item =>
+      item.id === id
+        ? { ...item, quantity: Math.max(1, Math.min(item.quantity + change, item.stock)) }
+        : item
     );
-    setUpdatedItems(prev => new Set(prev).add(id)); // Tandai item untuk diperbarui di API
+
+    setCart(updatedCart);
+    localStorage.setItem(`cart-${userId}`, JSON.stringify(updatedCart)); // Simpan perubahan kuantitas ke localStorage
+    setUpdatedItems(prev => new Set(prev).add(id));
   };
 
   const totalPrice = cart.reduce(
     (sum, p) => sum + (parseInt(p.price.replace(/\D/g, '')) || 0) * Math.min(p.quantity, p.stock),
     0
   );
-  
+
   return (
     <Stack flex={1} bg="#ffffff" width="100vw" minHeight="100vh">
       <Navbar />
-
-      <Stack paddingTop={100} width="100%" >
+      <Stack paddingTop={100} width="100%">
         <ScrollView showsVerticalScrollIndicator={false} padding={20}>
           {isMobile ? (
             <YStack space>
               <YStack space alignItems="center">
                 {cart.map((item) => (
-                  <XStack
-                    key={item.id}
-                    width="90%"
-                    padding={15}
-                    borderRadius={12}
-                    bg="#ffffff"
-                    borderWidth={2}
-                    borderColor="#ebebeb"
-                    alignItems="center"
-                    space
-                  >
-                    <Image
-                      source={{ uri: item.image }}
-                      width={150}
-                      height={120}
-                      borderRadius={10}
-                      resizeMode="contain"
-                    />
+                  <XStack key={item.id} width="90%" padding={15} borderRadius={12} bg="#ffffff" borderWidth={2} borderColor="#ebebeb" alignItems="center" space>
+                    <Image source={{ uri: item.image }} width={150} height={120} borderRadius={10} resizeMode="contain" />
                     <YStack flex={1}>
                       <Text fontSize={20} fontWeight="bold" color="#343434">{item.name}</Text>
                       <Text fontSize={16} color="#343434">Price: IDR {item.price}</Text>
@@ -117,13 +119,7 @@ cartData.forEach(item => {
                         <Button size="$3" bg="#ff5733" onPress={() => updateQuantity(item.id, -1)}>
                           <Text color="#fff">−</Text>
                         </Button>
-                        <Input
-                          size="105"
-                          textAlign="center"
-                          fontSize={16}
-                          value={(item.quantity > item.stock ? item.stock : item.quantity).toString()}
-                          editable={false}
-                        />
+                        <Input size="105" textAlign="center" fontSize={16} value={(item.quantity > item.stock ? item.stock : item.quantity).toString()} editable={false} />
                         <Button size="$3" bg="#273aff" onPress={() => updateQuantity(item.id, 1)}>
                           <Text color="#fff">+</Text>
                         </Button>

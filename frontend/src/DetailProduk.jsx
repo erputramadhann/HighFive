@@ -23,12 +23,6 @@ export default function DetailProduk() {
         const userId = localStorage.getItem("id");
         const banyakCart = parseInt(localStorage.getItem("banyakCart")) || 0;
     
-        if (!banyakCart) {
-            localStorage.setItem("banyakCart", 1);
-        } else {
-            localStorage.setItem("banyakCart", banyakCart + 1);
-        }
-    
         if (!userId) {
             navigate("/login"); // Arahkan ke halaman login jika id kosong
             return;
@@ -54,6 +48,7 @@ export default function DetailProduk() {
                 });
             } else {
                 // Jika belum ada, tambahkan produk baru
+                localStorage.setItem("banyakCart", banyakCart + 1);
                 await axios.post("http://localhost:3005/cart", {
                     userId: userId,
                     productId: data.id,
