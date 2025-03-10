@@ -1,0 +1,163 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@store.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "email": "user@store.com",
+      "password": "user123",
+      "role": "customer"
+    },
+    {
+      "email": "farhan@store.com",
+      "password": "$2a$10$QpuUrk7WBXl20O9IsLFXkOjpWkUmcD3b/MaooC3b4ABTcdo0J3Uo6",
+      "role": "admin",
+      "id": 3
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$EnpF5Vgh0hoJgHz7T3464OHqvwDmq9lP18FLqHr2XpfwaLzrqDJlC",
+      "role": "admin",
+      "id": 4
+    },
+    {
+      "email": "ridwan@gmail.com",
+      "password": "$2a$10$di8ldm5HLCrRB0emySdSxemxbcwvw4AjqRRLncRFzU05T47qrR4oe",
+      "role": "customer",
+      "id": 5
+    },
+    {
+      "email": "dika@gmail.com",
+      "password": "$2a$10$KFcqEGFXJgKHqkE5MX0aleEpZuFgUxfKYreXCjCySwEqPi7.TahVK",
+      "role": "customer",
+      "id": 6
+    },
+    {
+      "email": "user@gmail.com",
+      "password": "$2a$10$TxSAIK4M5pERx4F90acKzOFS6nwH5fcLcz95QKXCSgPF/BwLDLVTq",
+      "role": "customer",
+      "id": 7
+    }
+  ],
+  "products": [
+    {
+      "name": "Oversized Bicolor T-Shirt",
+      "price": "249.000",
+      "categoryId": 1,
+      "image": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/475366/sub/goods_475366_sub14_3x4.jpg?width=369",
+      "description": "Raglan sleeves for a sporty look. Half-sleeve design in an oversized cut for a relaxed feel. Playful bicolor design.",
+      "stock": "22",
+      "userId": 4,
+      "id": 7
+    },
+    {
+      "name": "Oversized Striped T-Shirt",
+      "price": "229.000",
+      "categoryId": 1,
+      "image": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/475362/sub/goods_475362_sub14_3x4.jpg?width=369",
+      "description": "Oversized cut with half-length sleeves and dropped shoulders for a relaxed feel.",
+      "stock": "22",
+      "userId": 4,
+      "id": 8
+    },
+    {
+      "name": "DRY-EX T-Shirt Grey",
+      "price": "230.000",
+      "categoryId": 1,
+      "image": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/465191/sub/goods_465191_sub14_3x4.jpg?width=369",
+      "description": "Smooth, fine fabric, now less glossy for a premium look.",
+      "stock": "30",
+      "userId": 4,
+      "id": 9
+    },
+    {
+      "name": "DRY-EX T-Shirt | Pattern",
+      "price": "322.000",
+      "categoryId": 1,
+      "image": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/476141/sub/goods_476141_sub14_3x4.jpg?width=369",
+      "description": "Dengan desain klasik dan warna versatile, celana jeans ini mudah dipadukan dengan kaos, kemeja, hingga hoodie favoritmu. Cocok untuk pria yang ingin tampil casual tapi tetap rapi.",
+      "stock": 20,
+      "userId": 4,
+      "id": 10
+    },
+    {
+      "name": "AIRism Cotton Oversized",
+      "price": "252.000",
+      "categoryId": 1,
+      "image": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/477764/sub/goods_477764_sub14_3x4.jpg?width=369",
+      "description": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/477764/sub/goods_477764_sub14_3x4.jpg?width=369",
+      "stock": 25,
+      "userId": 4,
+      "id": 11
+    },
+    {
+      "name": "Slim Denim Pants",
+      "price": "359.000",
+      "categoryId": 2,
+      "image": "https://executive.co.id/cdn/shop/files/7-MLDISEA224L064_LT_1_6f62150c-3fc4-4add-85a8-86369333d78a_1080x.jpg?v=1740554306",
+      "description": "Dengan potongan regular fit yang pas di badan, serta detail kerah klasik yang rapi, polo ini cocok dipadukan dengan celana chino, jeans, atau short pants untuk berbagai aktivitas santai hingga semi-formal.",
+      "stock": 25,
+      "userId": 4,
+      "id": 13
+    },
+    {
+      "name": "Slim Fit Denim Pants",
+      "price": "320.000",
+      "categoryId": 2,
+      "image": "https://i.pinimg.com/736x/f1/b9/e4/f1b9e49090a60f0c97875babc4e666c9.jpg",
+      "description": "Celana jeans denim tting slim t dengan washingan med blue dilengkapi dengan whisker dan spray yang kontras hingga jeans terlihat worn in.",
+      "stock": 25,
+      "userId": 4,
+      "id": 14
+    },
+    {
+      "name": "Slim Denim Black Pants",
+      "price": "352.000",
+      "categoryId": 2,
+      "image": "https://executive.co.id/cdn/shop/files/7-MLDISEA224K053_DK._GREY_1_3ab19412-125b-40ab-bb3e-93d22c5ce28c_1080x.jpg?v=1740554293",
+      "description": "Celana jeans denim cutting slim t dengan washingan light blue yang modern dan dilengkapi dengan whisker dan spray subtle agar jeans terlihat worn in. Memiliki lima kantung. Ritsleting depan dengan kancing logam.",
+      "stock": 25,
+      "userId": 4,
+      "id": 15
+    },
+    {
+      "name": "Skinny Straight Denim Pants",
+      "price": "499.000",
+      "categoryId": 2,
+      "image": "https://executive.co.id/cdn/shop/files/7-MLDNSEA224L066_LT_1_5f28165c-f597-4e26-bd41-16875111a44d_1080x.jpg?v=1740554308",
+      "description": "Celana jeans denim fitting slim dengan washingan light blue, dilengkapi dengan whisker dan spray memberikan e ect worn in. ",
+      "stock": "11",
+      "userId": 4,
+      "id": 16
+    },
+    {
+      "name": "Skinny Straight Pants",
+      "price": "239.000",
+      "categoryId": 2,
+      "image": "https://executive.co.id/cdn/shop/files/7-MLDNSEA224L066_LT_1_5f28165c-f597-4e26-bd41-16875111a44d_1080x.jpg?v=1740554308",
+      "description": "Celana jeans denim fitting slim dengan washingan light blue, dilengkapi dengan whisker dan spray memberikan e ect worn in. ",
+      "stock": "11",
+      "userId": 4,
+      "id": 23
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "T-Shirts"
+    },
+    {
+      "id": 2,
+      "name": "Jeans"
+    }
+  ],
+  "cart": [
+    
+  ],
+  "orders": [],
+  "wishlist": []
+}

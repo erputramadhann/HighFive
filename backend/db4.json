@@ -1,0 +1,278 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@store.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "email": "user@store.com",
+      "password": "user123",
+      "role": "customer"
+    },
+    {
+      "email": "farhan@store.com",
+      "password": "$2a$10$QpuUrk7WBXl20O9IsLFXkOjpWkUmcD3b/MaooC3b4ABTcdo0J3Uo6",
+      "role": "admin",
+      "id": 3
+    },
+    {
+      "email": "admin@su.com",
+      "password": "$2a$10$nutuDwfgivU6Quaj..wAxe2lY5T75iswEeo.FZv.r5r7vEFqjlp5C",
+      "role": "admin",
+      "id": 4
+    },
+    {
+      "email": "khoirunnisapk@gmail.com",
+      "password": "$2a$10$3O6nrCoOD8cKeLe/ClyKz.H/UrcGNz1SUcXbMca2.BATmJHZIzGeq",
+      "role": "customer",
+      "id": 5
+    },
+    {
+      "email": "jane123@gmail.com",
+      "password": "$2a$10$MStYM2yyh9mHRNB9.sAsVOHw/MNLW5qDU5Zh.vMgY4hKpTIdje/pq",
+      "role": "customer",
+      "id": 6
+    },
+    {
+      "email": "a@a.com",
+      "password": "$2a$10$D852ECqSKn865Y8bBr3uIuHdczA.oafSG1VkVp8.HKHqx3K04AZGS",
+      "role": "customer",
+      "id": 7
+    },
+    {
+      "email": "aa@a.com",
+      "password": "$2a$10$aqGFLh4xqFEGu4Vr3Z5x0OlO7EQnO/rcrX4C4j1N3R0pVzHGTiZwO",
+      "role": "customer",
+      "id": 8
+    },
+    {
+      "email": "tio@a.com",
+      "password": "$2a$10$a6oRgDZphNpRGlTNUxkJw.89MozZC.J.xnSZ6w9r0J3QaBzPfH7Ru",
+      "role": "customer",
+      "id": 9
+    },
+    {
+      "email": "c@a.com",
+      "password": "$2a$10$Bolxzb8WMMivUTI7ssdzneKrB8Aixr9uxJmwzZEDB5aoYvwNHvk6S",
+      "role": "customer",
+      "id": 10
+    },
+    {
+      "email": "tes1@gmail.com",
+      "password": "$2a$10$XFzpjcuSbriPfa3y3PcRhedDs0Kv7b4CTbzpbE9OHvrUZ49L1/Nja",
+      "role": "customer",
+      "id": 11
+    },
+    {
+      "email": "b@a.com",
+      "password": "$2a$10$qWOjUfFUELynQhzdkB5ib.SYyGJhwECXJYPP71f96r.GONOY9rb5S",
+      "role": "customer",
+      "id": 12
+    },
+    {
+      "email": "tes9@gmail.com",
+      "password": "$2a$10$FcWC8gDtFGDKkNEE7MfIbu78ip8D1u9cPLpXJsctu9BU395.yjOZW",
+      "role": "customer",
+      "id": 13
+    },
+    {
+      "email": "tes10@gmail.com",
+      "password": "$2a$10$dy7WDir4QTXGKJ2ek3BYAeko5j8IfdJF.FMNYqvFwLKBuwVKzftC6",
+      "role": "customer",
+      "id": 14
+    },
+    {
+      "email": "d@a.com",
+      "password": "$2a$10$ei5uqs.STBqYhd3koOeF2.18UyDvym6OxbxR4MG2.KWyDuPGuhcam",
+      "role": "customer",
+      "id": 15
+    },
+    {
+      "email": "wonwoo@gmail.com",
+      "password": "$2a$10$RVEzLpzNQFpJ.F45D5jXjOTw.iODoNqzl.chaKUmCw6K6cdJycv5G",
+      "role": "customer",
+      "id": 16
+    },
+    {
+      "email": "tes11@gmail.com",
+      "password": "$2a$10$ZpzIUbuZ4vTGMKhR8Zrs1expq8V0Sdq.oEoCozJvg/oxhanHL/Nwq",
+      "role": "customer",
+      "id": 17
+    },
+    {
+      "email": "e@a.com",
+      "password": "$2a$10$j5UGan2KTbO6ykrT0Sunx.Wr0bDmi7zAsFpr.WIS9w4jb5j85bEiq",
+      "role": "customer",
+      "id": 18
+    },
+    {
+      "email": "tes12@gmail.com",
+      "password": "$2a$10$o6XCB57DBXlfSNzpAne0MuoXecRbDZMpbPJaxbCw967lqMxWtLYpy",
+      "role": "customer",
+      "id": 19
+    },
+    {
+      "email": "f@a.com",
+      "password": "$2a$10$uem85qwrvddL1z36QnRZB.vmcXQo3mePdxOZ1iR.8h7xmwg71l9J2",
+      "role": "customer",
+      "id": 20
+    },
+    {
+      "email": "u1@gmail.com",
+      "password": "$2a$10$VDVbks3V.4BEayGommQ1KeB/rgMeA1B6WpHDaxcsFPDh2w8vFqKNG",
+      "role": "customer",
+      "id": 21
+    },
+    {
+      "email": "test222@simail.com",
+      "password": "$2a$10$sJxzfZ.q7yMwjiL2MyyEAu7owAXUhM9DADA/Vygvh8meeABT3dbhi",
+      "role": "customer",
+      "id": 22
+    },
+    {
+      "email": "tes20@gmail.com",
+      "password": "$2a$10$LWNna2MS/5ur8N3o7TrtZ.9ltWjyFeQh5rZ0VNV/IMjOH02DdSdeC",
+      "role": "customer",
+      "id": 23
+    },
+    {
+      "email": "userbaru@test.com",
+      "password": "$2a$10$jwydFIa6QK.Gtvl5KEFqauZphV8EeVvKEwGYXQ.WwPiv2sTNk9qFy",
+      "role": "customer",
+      "id": 24
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "T-Shirt",
+      "price": 19.99,
+      "categoryId": 1,
+      "image": "tshirt.jpg",
+      "description": "Comfortable cotton t-shirt",
+      "stock": 50
+    },
+    {
+      "userId": "4",
+      "name": "Jeans",
+      "price": 39.99,
+      "image": "https://dynamic.zacdn.com/-wvCvASPRWhzHedjVKFYjYn_voo=/filters:quality(70):format(webp)/https://static-id.zacdn.com/p/hamlin-6880-3269183-1.jpg",
+      "description": "Slim fit denim jeans",
+      "stock": 30,
+      "categoryId": 2,
+      "id": 2
+    },
+    {
+      "userId": "4",
+      "name": "Washed Blue",
+      "price": 15,
+      "description": "100% Cotton denim.",
+      "stock": 15,
+      "categoryId": 2,
+      "image": "https://www.devastat.es/cdn/shop/products/FHM05906.png?v=1667530466&width=2100",
+      "id": 4
+    },
+    {
+      "userId": "4",
+      "name": "TREKKER Nylon Trek Pants [Multi]",
+      "price": 100,
+      "description": "Signature woven label and rubber patch applique",
+      "stock": 25,
+      "categoryId": 2,
+      "image": "https://www.devastat.es/cdn/shop/files/1.1_62.png?v=1696514009&width=2100",
+      "id": 5
+    },
+    {
+      "userId": "4",
+      "name": "DANCE Hoodie [Black]",
+      "price": 120,
+      "description": "Pre-Shrunk to minimize shrinkage",
+      "stock": 40,
+      "categoryId": 1,
+      "image": "https://www.devastat.es/cdn/shop/files/1_3_5e43ec01-9ad7-4928-afc5-30b24aec73e4.jpg?v=1725265985&width=2100",
+      "id": 6
+    },
+    {
+      "userId": "4",
+      "name": "ASCENT-04/NA Reversible[Multi]",
+      "price": 155,
+      "description": "quilted nylon with hidden pocket at the back",
+      "stock": 25,
+      "categoryId": 1,
+      "image": "https://www.devastat.es/cdn/shop/files/1_1_08948b00-ee2b-4246-b0bd-4015ba599a9d.jpg?v=1725338952&width=2100",
+      "id": 7
+    },
+    {
+      "userId": "4",
+      "name": "baju edit",
+      "price": 65,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKXSxsR114_wnQzEWHYqQk7aBlNXDtroLWAQ&s",
+      "description": "test tambah baju",
+      "stock": 100,
+      "categoryId": 1,
+      "id": 8
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "T-Shirts"
+    },
+    {
+      "id": 2,
+      "name": "Jeans"
+    }
+  ],
+  "cart": [],
+  "orders": [
+    {
+      "userId": "14",
+      "productId": 1,
+      "quantity": 1,
+      "totalPrice": 19.99,
+      "status": "Pending",
+      "orderDate": "2025-03-06T04:51:27.768Z",
+      "id": 1
+    },
+    {
+      "userId": "14",
+      "productId": 2,
+      "quantity": 2,
+      "totalPrice": 79.98,
+      "status": "Pending",
+      "orderDate": "2025-03-06T04:51:27.858Z",
+      "id": 2
+    },
+    {
+      "userId": "23",
+      "productId": 5,
+      "quantity": 1,
+      "totalPrice": 100,
+      "status": "Pending",
+      "orderDate": "2025-03-06T08:42:16.819Z",
+      "id": 3
+    },
+    {
+      "userId": "24",
+      "productId": 6,
+      "quantity": 1,
+      "totalPrice": 120,
+      "status": "Pending",
+      "orderDate": "2025-03-06T09:15:00.259Z",
+      "id": 4
+    },
+    {
+      "userId": "24",
+      "productId": 2,
+      "quantity": 1,
+      "totalPrice": 39.99,
+      "status": "Pending",
+      "orderDate": "2025-03-06T09:15:00.444Z",
+      "id": 5
+    }
+  ],
+  "wishlist": []
+}

@@ -1,0 +1,162 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@store.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "email": "user@store.com",
+      "password": "user123",
+      "role": "customer"
+    },
+    {
+      "email": "farhan@store.com",
+      "password": "$2a$10$QpuUrk7WBXl20O9IsLFXkOjpWkUmcD3b/MaooC3b4ABTcdo0J3Uo6",
+      "role": "admin",
+      "id": 3
+    },
+    {
+      "email": "samudrobintang10@gmail.com",
+      "password": "$2a$10$uI0WOM5js3LLCRPSUQ/iYOm7koQrFMtpKzcMc9VI2sROE3IHaCOSm",
+      "role": "customer",
+      "id": 4
+    },
+    {
+      "email": "b@gmail.com",
+      "password": "$2a$10$3JAZUtZqmsPci2Hs3QlLhugpUKEuHHTBxO0AuLUDxnAxSFVbY.pHW",
+      "role": "customer",
+      "id": 5
+    },
+    {
+      "email": "a@a.com",
+      "password": "$2a$10$DNX7W4BHy6jbdHSNS25fneqN18B1OdbHKgltpIkCi1XZ8IE2vVk4.",
+      "role": "customer",
+      "id": 6
+    },
+    {
+      "email": "bintangdinasmulu@gmail.com",
+      "password": "$2a$10$bkM3zjYWvsEfcSb0hJiOT.9pRD0rtG8xlWS3HItfTvvlQ8w.rlyHS",
+      "role": "customer",
+      "id": 7
+    },
+    {
+      "email": "aulia@gmail.com",
+      "password": "$2a$10$jgJfa1mHqeMR.YH1nPcS2OMoDLEAii/qulp/LfpjRFY2EuZ5PyGLy",
+      "role": "customer",
+      "id": 8
+    },
+    {
+      "email": "admin@admin.com",
+      "password": "$2a$10$/w9fxbBNhhuK5iyrumgvvOKR9zPRGrXyMyKskOO63CnBsxPGhA7Y.",
+      "role": "admin",
+      "id": 9
+    },
+    {
+      "email": "ria@mail.com",
+      "password": "$2a$10$AbH156/WX6y10HVOU1vlh.DzExTYfQ/CHkk8HueA09/XR3HvsXpsy",
+      "role": "customer",
+      "id": 10
+    },
+    {
+      "email": "mf@gmail.com",
+      "password": "$2a$10$Ed4YjhMvKF3s61zj7figge9Q3ADgCJEhpCu6.sgKL5Fu595kU8JHe",
+      "role": "customer",
+      "id": 11
+    }
+  ],
+  "products": [
+    {
+      "name": "Blouse",
+      "price": 10,
+      "categoryId": 1,
+      "image": "https://dynamic.zacdn.com/wbwm-gzKaWHq91Mjcz4fin2liEo=/filters:quality(70):format(webp)/https://static-id.zacdn.com/p/ootdsupply-2703-0575154-4.jpg",
+      "description": "Oke",
+      "stock": 12,
+      "userId": 9,
+      "id": 3
+    },
+    {
+      "name": "Kaos",
+      "price": 1.2,
+      "categoryId": 1,
+      "image": "https://simpleteeshops.com/wp-content/uploads/2020/02/Graphic-Printed-T-Shirt-for-Men-USA-Flag-T-Shirt.jpg",
+      "description": "ini kaos",
+      "stock": 20,
+      "userId": 9,
+      "id": 4
+    },
+    {
+      "name": "Baju Kebalik",
+      "price": 90,
+      "categoryId": 1,
+      "image": "https://s.abcnews.com/images/GMA/viktor-and-rolf-1-gty-bb-230126_1674742493733_hpMain_4x5_608.jpg",
+      "description": "Mantap sekali ini",
+      "stock": 300,
+      "userId": 9,
+      "id": 5
+    },
+    {
+      "name": "Jaket",
+      "price": 35,
+      "categoryId": 1,
+      "image": "jaket.png",
+      "description": "-",
+      "stock": 50,
+      "userId": 9,
+      "id": 6
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "T-Shirts"
+    },
+    {
+      "id": 2,
+      "name": "Jeans"
+    }
+  ],
+  "cart": [
+    {
+      "userId": 8,
+      "productId": 3,
+      "quantity": 8,
+      "id": 6
+    },
+    {
+      "userId": 10,
+      "productId": 4,
+      "quantity": 4,
+      "id": 8
+    },
+    {
+      "userId": 10,
+      "productId": 3,
+      "quantity": 1,
+      "id": 9
+    },
+    {
+      "userId": 11,
+      "productId": 5,
+      "quantity": 6,
+      "id": 10
+    },
+    {
+      "userId": 0,
+      "productId": 5,
+      "quantity": 3,
+      "id": 11
+    },
+    {
+      "userId": 8,
+      "productId": 5,
+      "quantity": 2,
+      "id": 12
+    }
+  ],
+  "orders": [],
+  "wishlist": []
+}

@@ -1,0 +1,232 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@store.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "email": "user@store.com",
+      "password": "user123",
+      "role": "customer"
+    },
+    {
+      "email": "farhan@store.com",
+      "password": "$2a$10$QpuUrk7WBXl20O9IsLFXkOjpWkUmcD3b/MaooC3b4ABTcdo0J3Uo6",
+      "role": "admin",
+      "id": 3
+    },
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$QLoVEkhPO8Jci/N270yqduhMvMxX9ZOi3cbdIfkCUZN67fiVzXDqi",
+      "role": "customer",
+      "id": 4
+    },
+    {
+      "email": "admin@mail.com",
+      "password": "$2a$10$XNUf48B.MXMFLqCOFq.rUOmpQRD8cKk74GfUybPbHv4kFPT3/CwCC",
+      "role": "admin",
+      "id": 5
+    },
+    {
+      "email": "customer@mail.com",
+      "password": "$2a$10$nPiHcU2tEipzqgpnx3fmK.9AtwGTTX0dUb1I0hvXwEvJcxI4Ulsu.",
+      "role": "customer",
+      "id": 6
+    },
+    {
+      "email": "test@mail.com",
+      "password": "$2a$10$MIJ1kqceZnFGY6F1I3QwTOgZLhX/APexIMsaKvpv7yKUWp9xFllfa",
+      "role": "customer",
+      "id": 7
+    }
+  ],
+  "products": [
+    {
+      "name": "celana panjang",
+      "price": 321.22,
+      "categoryId": 2,
+      "image": "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
+      "userId": "5",
+      "description": "celana panjang banget nih ges",
+      "stock": 3,
+      "id": 1
+    },
+    {
+      "name": "edited product",
+      "price": 123123,
+      "categoryId": 1,
+      "image": "http",
+      "userId": "5",
+      "description": "fffff",
+      "stock": 6,
+      "id": 2
+    },
+    {
+      "userId": 5,
+      "name": "T-Shirt Abebe",
+      "price": 20000.99,
+      "categoryId": 1,
+      "image": "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
+      "description": "Comfortable cotton t-shirt",
+      "stock": 50,
+      "id": 3
+    },
+    {
+      "userId": 5,
+      "name": "T-Shirt Abebe",
+      "price": 20000.99,
+      "categoryId": 1,
+      "image": "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
+      "description": "Comfortable cotton t-shirt",
+      "stock": 50,
+      "id": 4
+    },
+    {
+      "userId": 5,
+      "name": "T-Shirt Abebe",
+      "price": 20000.99,
+      "categoryId": 1,
+      "image": "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
+      "description": "Comfortable cotton t-shirt",
+      "stock": 50,
+      "id": 5
+    },
+    {
+      "userId": 5,
+      "name": "T-Shirt Abebe",
+      "price": 20000.99,
+      "categoryId": 1,
+      "image": "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
+      "description": "Comfortable cotton t-shirt",
+      "stock": 50,
+      "id": 6
+    },
+    {
+      "userId": 5,
+      "name": "T-Shirt Abebe",
+      "price": 20000.99,
+      "categoryId": 1,
+      "image": "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
+      "description": "Comfortable cotton t-shirt",
+      "stock": 50,
+      "id": 7
+    },
+    {
+      "userId": 5,
+      "name": "T-Shirt Abebe",
+      "price": 20000.99,
+      "categoryId": 1,
+      "image": "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
+      "description": "Comfortable cotton t-shirt",
+      "stock": 50,
+      "id": 8
+    },
+    {
+      "name": "hoodie",
+      "price": 22.99,
+      "categoryId": 1,
+      "image": "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
+      "userId": 5,
+      "description": "Comfortable cotton t-shirt",
+      "stock": 50,
+      "id": 9
+    },
+    {
+      "name": "hoodie",
+      "price": 1223.99,
+      "categoryId": 1,
+      "image": "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
+      "userId": 5,
+      "description": "Comfortable cotton t-shirt",
+      "stock": 50,
+      "id": 10
+    },
+    {
+      "name": "cleana",
+      "price": 2233,
+      "categoryId": 2,
+      "image": "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
+      "userId": "6",
+      "description": "celana",
+      "stock": 2,
+      "id": 11
+    },
+    {
+      "name": "cleana",
+      "price": 2233,
+      "categoryId": 2,
+      "image": "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
+      "userId": "6",
+      "description": "celana",
+      "stock": 2,
+      "id": 12
+    },
+    {
+      "name": "celanaygy",
+      "price": 223344,
+      "categoryId": 2,
+      "image": "https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png",
+      "userId": "6",
+      "description": "ini celana",
+      "stock": 1,
+      "id": 13
+    },
+    {
+      "name": "test product",
+      "price": 123132231,
+      "categoryId": 1,
+      "image": "http",
+      "userId": "5",
+      "description": "lorem",
+      "stock": 4,
+      "id": 14
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "T-Shirts"
+    },
+    {
+      "id": 2,
+      "name": "Jeans"
+    }
+  ],
+  "cart": [
+    {
+      "userId": 3,
+      "productId": 6,
+      "quantity": 2,
+      "id": 1
+    },
+    {
+      "userId": 3,
+      "productId": 6,
+      "quantity": 2,
+      "id": 2
+    },
+    {
+      "userId": 3,
+      "productId": 6,
+      "quantity": 2,
+      "id": 3
+    },
+    {
+      "userId": 3,
+      "productId": 6,
+      "quantity": 2,
+      "id": 4
+    },
+    {
+      "userId": 3,
+      "productId": 6,
+      "quantity": 2,
+      "id": 5
+    }
+  ],
+  "orders": [],
+  "wishlist": []
+}

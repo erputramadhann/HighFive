@@ -1,0 +1,203 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@store.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "email": "user@store.com",
+      "password": "user123",
+      "role": "customer"
+    },
+    {
+      "email": "farhan@store.com",
+      "password": "$2a$10$QpuUrk7WBXl20O9IsLFXkOjpWkUmcD3b/MaooC3b4ABTcdo0J3Uo6",
+      "role": "admin",
+      "id": 3
+    },
+    {
+      "email": "superadmin@store.com",
+      "password": "$2a$10$rCYvkgGbL9ULw4QBWNeIk.EgkDY2/M8GcSNJD.LOo5u3aoW65qhwS",
+      "role": "admin",
+      "id": 4
+    },
+    {
+      "email": "rahmatadmin@store.com",
+      "password": "$2a$10$qEg/wUd2AB2iHVhVfmnfWOVGlMi384hJ1F4haNRD7sHyUCRMyzqAC",
+      "id": 5
+    },
+    {
+      "email": "finaadmin@store.com",
+      "password": "$2a$10$3CT2ktj5nMoPIMVF0WjEm.HjkQKHdT5GZfiL98UkfSmQsL2D652Ly",
+      "id": 6
+    },
+    {
+      "email": "customer1@store.com",
+      "password": "$2a$10$ze1CCNgVW6YLRlU4oioFH.aZA5DewyLiwJijG/LO9.7oyBDCoX9Dq",
+      "role": "customer",
+      "id": 7
+    }
+  ],
+  "products": [
+    {
+      "id": 2,
+      "name": "Jeans",
+      "price": 39.99,
+      "categoryId": 2,
+      "image": "jeans.jpg",
+      "description": "Slim fit denim jeans",
+      "stock": 30
+    },
+    {
+      "name": "Baju Wanita",
+      "price": 1000,
+      "categoryId": 2,
+      "image": "https://down-id.img.susercontent.com/file/id-11134207-7ras9-m5f67pe41qwyaa.webp",
+      "description": "-",
+      "stock": 3,
+      "userId": 6,
+      "id": 3
+    },
+    {
+      "name": "Jean",
+      "price": "10000",
+      "categoryId": "3",
+      "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2024/9/23/71423a87-3104-4507-90d3-e22de53a179c.jpg",
+      "description": "-",
+      "stock": "12",
+      "userId": "5",
+      "id": 4
+    },
+    {
+      "name": "Jean",
+      "price": "10000",
+      "categoryId": "3",
+      "image": "https://images.tokopedia.net/img/cache/900/VqbcmM/2024/9/23/71423a87-3104-4507-90d3-e22de53a179c.jpg",
+      "description": "-",
+      "stock": "12",
+      "userId": "5",
+      "id": 5
+    }
+  ],
+  "categories": [
+    {
+      "id": 2,
+      "name": "Jeans"
+    },
+    {
+      "name": "Shoes",
+      "userId": 4,
+      "id": 3
+    },
+    {
+      "name": "Helm",
+      "userId": 4,
+      "id": 4
+    },
+    {
+      "name": "Jacket",
+      "userId": 5,
+      "id": 5
+    },
+    {
+      "name": "T-Shirt",
+      "userId": 5,
+      "id": 6
+    },
+    {
+      "name": "Accessories",
+      "userId": 5,
+      "id": 7
+    }
+  ],
+  "cart": [
+    {
+      "userId": 4,
+      "productId": 3,
+      "quantity": 7,
+      "id": 1
+    },
+    {
+      "userId": 4,
+      "productId": 3,
+      "quantity": 4,
+      "id": 2
+    },
+    {
+      "userId": 4,
+      "productId": 3,
+      "quantity": 1,
+      "id": 3
+    },
+    {
+      "userId": 5,
+      "productId": 3,
+      "quantity": 2,
+      "id": 4
+    },
+    {
+      "userId": 5,
+      "productId": 4,
+      "quantity": 1,
+      "id": 5
+    },
+    {
+      "userId": 4,
+      "productId": 3,
+      "quantity": 1,
+      "id": 6
+    },
+    {
+      "userId": 4,
+      "productId": 3,
+      "quantity": 1,
+      "id": 7
+    },
+    {
+      "userId": 4,
+      "productId": 3,
+      "quantity": 1,
+      "id": 8
+    },
+    {
+      "userId": 4,
+      "productId": 3,
+      "quantity": 1,
+      "id": 9
+    },
+    {
+      "userId": 4,
+      "productId": 3,
+      "quantity": 1,
+      "id": 10
+    },
+    {
+      "userId": 4,
+      "productId": 3,
+      "quantity": 1,
+      "id": 11
+    },
+    {
+      "userId": 4,
+      "productId": 3,
+      "quantity": 1,
+      "id": 12
+    },
+    {
+      "userId": 7,
+      "productId": 3,
+      "quantity": 3,
+      "id": 13
+    },
+    {
+      "userId": 7,
+      "productId": 3,
+      "quantity": 2,
+      "id": 15
+    }
+  ],
+  "orders": []
+}

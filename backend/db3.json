@@ -1,0 +1,80 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@store.com",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "email": "user@store.com",
+      "password": "user123",
+      "role": "customer"
+    },
+    {
+      "email": "farhan@store.com",
+      "password": "$2a$10$QpuUrk7WBXl20O9IsLFXkOjpWkUmcD3b/MaooC3b4ABTcdo0J3Uo6",
+      "role": "admin",
+      "id": 3
+    },
+    {
+      "email": "test@gmail.com",
+      "password": "$2a$10$GRIo2npGs/m0LuBBESn/VOS5MLTa6XwyPSWryfrLTECOXFDYlDfdG",
+      "role": "customer",
+      "id": 4
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "T-Shirt",
+      "price": 19.99,
+      "categoryId": 1,
+      "image": "tshirt.jpg",
+      "description": "Comfortable cotton t-shirt",
+      "stock": 50
+    },
+    {
+      "id": 2,
+      "name": "Jeans",
+      "price": 39.99,
+      "categoryId": 2,
+      "image": "jeans.jpg",
+      "description": "Slim fit denim jeans",
+      "stock": 30
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "T-Shirts"
+    },
+    {
+      "id": 2,
+      "name": "Jeans"
+    }
+  ],
+  "cart": [
+    {
+      "userId": 0,
+      "productId": 0,
+      "quantity": 0,
+      "id": 1
+    },
+    {
+      "userId": 4,
+      "productId": 1,
+      "quantity": 3,
+      "id": 2
+    },
+    {
+      "userId": 4,
+      "productId": 1,
+      "quantity": 5,
+      "id": 3
+    }
+  ],
+  "orders": [],
+  "wishlist": []
+}
